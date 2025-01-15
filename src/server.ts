@@ -1,4 +1,5 @@
 import fastify from 'fastify'
+import { env } from './env'
 
 const app = fastify()
 
@@ -8,7 +9,7 @@ app.get('/health', async () => {
 
 app.listen(
   {
-    port: 8080,
+    port: env.PORT,
   },
   (_, address) => {
     console.log(address)
