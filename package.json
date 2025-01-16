@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts --fix",
-    "knex": "node --import tsx ./node_modules/.bin/knex"
+    "knex": "node --import tsx ./node_modules/.bin/knex",
+    "test": "vitest"
   },
   "author": {
     "email": "joseguilhermesorio@gmail.com",
@@ -24,7 +25,10 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^22.10.6",
+    "@types/supertest": "^6.0.2",
     "eslint": "^8.57.1",
-    "tsx": "^4.19.2"
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.2",
+    "vitest": "^3.0.0"
   }
 }
