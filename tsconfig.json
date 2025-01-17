@@ -4,6 +4,8 @@
     "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
+    "module": "CommonJS",
+    "target": "es2018"
   },
   "include": ["src/**/*.ts"]
 }
